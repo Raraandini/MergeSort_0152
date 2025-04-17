@@ -29,7 +29,7 @@ void input()
     for (int i = 0; i < n; i++)
     {
         cout << "Array index ke- " << i << " : ";
-        cin >> arr [i]
+        cin >> arr [i];
     }
 }
 
@@ -71,7 +71,7 @@ void mergeSort(int low, int high)
 
     while (j <= high) // step 4.e
     {
-        B[k] = arr[j] // step 4.e.i
+        B[k] = arr[j]; // step 4.e.i
         j++;          // step 4.e.ii
         k = k + 1;    // step 4.e.iii
     }
@@ -86,7 +86,7 @@ void mergeSort(int low, int high)
     // step 5
     for (int x = low; x <= high; x++)
     {
-        arr[x] = B[x]
+        arr[x] = B[x];
     }
 }
 
@@ -98,4 +98,11 @@ void output()
         cout << arr[i] << " ";
     }
     cout << endl;
+}
+
+int main()
+{
+    input();
+    mergeSort(0, n - 1);
+    output();
 }
